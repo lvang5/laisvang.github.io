@@ -1,71 +1,331 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="stylesheet.css"/>
-		
-	
-		<title>Lais Resume </title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Lais Vang | GitHub portfolio page</title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- Leave those next 4 lines if you care about users using IE8 -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<style>
+			h1, h2, h3, h4, h5{
+				color:#4A4E69 !important;
+				font-weight: 300;
+				font-family: 'Open Sans', sans-serif;
+			}
+
+			p {
+				color: #4A4E69;
+				font-weight: 300;
+				font-family: 'Open Sans', sans-serif;
+			}
+
+			.profile-pic {
+				box-shadow: 0px 4px 6px 2px lightgrey;
+			  border-radius: 50%
+			}
+
+			.m-t-1 {
+				margin-top:1em;
+			}
+
+			.p-t-1 {
+				padding-top:1em;
+			}
+
+
+			.about-me {
+				margin-top:25px;
+			}
+
+			.navbar-default {
+				background-color: #C9ADA7;
+				background: none;
+				border: none;
+				border-radius:0;
+			}
+
+			.repo-row {
+				padding: 65px 10px;
+			}
+
+			.repo-row:nth-child(odd) {
+			  background-color: lightgrey;
+			  -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+			  clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+			}
+
+			.vertical-align {
+				display: flex;
+			  align-items: center;
+			  justify-content: center;
+			}
+
+			@media (max-width: 991px) {
+			    .row.vertical-align {
+			        display: block; /* Turn off the flexible box layout */
+			    }
+			}
+
+			.work-item-img {
+				max-height: 480px;
+				max-width:80%;
+			}
+
+			.row-footer {
+			/*	background-color: lightgrey;
+				-webkit-clip-path: polygon(0 0%, 100% 4%, 100% 100%, 0% 100%);
+				clip-path: polygon(0 0%, 100% 4%, 100% 100%, 0% 100%);*/
+				padding: 65px 10px;
+			}
+
+			.linkedin-btn {
+				width:140px;
+				box-shadow: 0px 2px 5px 1px lightgrey;
+				padding: 12px;
+				border-radius: 5px;
+			}
+
+			.btn-launch {
+				width:100%;
+				max-width:200px;
+				background-color: #549657;
+				color:white;
+				box-shadow: 0px 2px 5px 1px darkgrey;
+			}
+
+			.btn-launch:hover,
+			.btn-launch:focus {
+				color: white;
+				background: #3d7140;
+			}
+
+			.techUsed {
+				font-size:54px;
+				padding: 40px 0 0;
+			}
+
+			.techUsed i {
+				margin:0 15px;
+			}
+
+			.toolsUsed {
+				font-size: 100px;
+			  padding: 40px 0;
+			}
+
+			.toolsUsed i {
+				margin:0 15px;
+			}
+
+			.about {
+				margin-bottom:80px;
+			}
+		</style>
+
 	</head>
-	
-	<h1> <center>Lais Vang </center></h1>
 	<body>
-	<h3> <center> 3815 56th Avenue North, Minneapolis, MN 55429| 763-670-1147| <a href="mailto:vang.lais05@gmail.com"> vang.lais05@gmail.com</a></center>
-	   </h3>
-	   
-	<div id="wrapper">
-	<img src="https://scontent.ffcm1-1.fna.fbcdn.net/v/t1.15752-9/31841895_1762449887132207_2867552782238351360_n.jpg?_nc_cat=0&amp;oh=e222ce0b547578b8e7f1069adf16a0db&amp;oe=5B9C8298">
-		
-	<h2> Career Objectives </h2>
-	    <p> My career focus and passion are driven into developing the network and telecommunications field. I always strive to contribute all my time and efforts to the work that I do and towards my own personal growth. </p>
-	<h2> Professional Development </h2>
-		<p2> May, 2015 - May, 2018 </p2>
-	<h3> Network Technician, Smart City Networks</h3>
-
-	    <ul> 
-	        <li>Provide excellent customer service to assist and discuss needs, concerns, and any additional services required such as installing ethernet or phone connections and troubleshooting network issues </li>
-	        <li> Manage the installation and provision network services during high prioritized events with software such as Cisco Prime, Cisco virtual wireless controller, and SolarWinds.</li>
-	        <li>	Follow-up with clients by monitoring network services and troubleshooting network issues. </li>
-	        <li>	Assist with Minneapolis Convention Center facility upgrades such as Mikrotiks, UPS battery, Cisco switches and WAPs. </li>
-	    </ul>
-	    <p2> Sept, 2015 - March, 2016 </p2>
-	    <h3> Student Tech Support Services, Minnesota Supercomputing Institute </h3>
-	    <ul>
-	        <li> Provided basic technical support for tier 1 tickets to students, staff and clients through the institution’s ticketing system to resolve issues quickly. </li>
-	        <li> Supported department team with computer and network maintenance to complete organizational weekly tasks.</li>
-            <li>Updated intranet webpages for effective staff use and documented changes into the system. </li>    
-        </ul>
-         <p2> May, 2015 - Sept, 2015 </p2>
-        
-        
-        <h3> Urban Scholars, City of Minneapolis </h3>
-	    <ul>
-	        <li>	Generated a 2013 audit report comparing financial profits of other Convention Centers throughout the country for the Minneapolis Convention Center.</li>
-            <li>Utilized event business management software (EBMS) to create new projects and manuals for upcoming application upgrades</li>
-            <li>Participated in over 100 hours of leadership training with different organizational culture and diverse communities.</li>
-            <li>Developed team-training communicability by applying our communication skills, authentic leadership, and values towards each other as a cohort</li>
-
-        </ul>
-	
 
 
-	<h2> Education </h2>
-	<p> University of Minnesota – Twin Cities                  
-College of Liberal Art Major: Undeclared Anticipated graduation in May 2019
-</p>
+		<div class="container-fluid">
 
-	
+			<section class="about">
+				<div class="text-center" style="margin-top:100px">
+					<img src="https://avatars1.githubusercontent.com/u/38891207?v&#x3D;4" width=200 class="profile-pic">
+					<h1>Lais Vang</h1>
+				  <h3>Minneapolis, MN</h3>
+				  <h5>I am a second generation Hmong American pursuing a Management Information Systems degree at Metropolitan State University. I hold a great deal of experience and a demonstrative history of working in the network and telecommunications industry along with great communication and sales skills. I always strive to contribute all of my time and efforts to the work that I do and towards my own personal growth. I am continuously expanding my knowledge within software development. My career focus and passion is driven into software developing and personal growth. I want to expand my knowledge about the IT field by gaining meaningful experiences. 
 
-<B>Technical Skills - </B>Unix system, Hardware terminology, and Network Topology, Cisco Routers and Switches, Wireless LAN Controller, Active Directory and User Administration<br>
-<b>Microsoft Applications – </b>Microsoft Word, Excel, PowerPoint, Outlook, OneNote<br>
-<b>Soft Skills – </b>Excellent oral and written communication skills, Strong work ethic, Teamwork, Positive Outlook<br>
-<b>Languages –</b> Hmong and English
+Technical skills: Git, GitHub, JavaScript, HTML5, CSS3, Material-UI, jQuery, React, React-Redux, React-Sagas, AngularJS, Heroku, Trello, Ninja Mockup, Passport.JS, Visual Studio Code, PostgreSQL, Node.JS, Express.JS, MongoDB, APIs, Restful API, Agile</h5>
 
-	
-	</div>
-	 
-    </body>
-		<footer> Copyright of Lais Vang's Resume
-	 </footer>
+				  <div class="text-center" style="margin:20px">
+				  	<a href="mailto:vang.lais@gmail.com" class="" target="_blank">
+				  		vang.lais@gmail.com
+				  	</a>
+				  </div>
+				</div>
+			</section>
+
+			<section class="repos">
+		  		<div class="row repo-row">
+		  		    <div class="col-sm-8 col-sm-offset-2">
+		  		    	<div class="row vertical-align">
+				  		    	<div class="col-xs-12 text-center">
+				  		    		<h2><a href="https://github.com/Maelstrm/ImpactHub-App" target="blank">ImpactHub-App</a></h2>
+				  		    		<p>A React application that allows members of co-work spaces to checkin and out.</p>
+				  		    	</div>
+		  		    		
+		  	    		</div>
+		  	    		<div class="row text-center techUsed">
+		  	    			<div class="col-xs-12">
+		  		    			<i class="devicon-react-plain-wordmark colored"></i>
+		  		    			<i class="devicon-visualstudio-plain-wordmark colored"></i>
+		  		    			<i class="devicon-trello-plain-wordmark colored"></i>
+		  		    			<i class="devicon-nodejs-plain-wordmark colored"></i>
+		  		    			<i class="devicon-express-plain-wordmark colored"></i>
+		  		    			<i class="devicon-javascript-plain-wordmark colored"></i>
+		  		    			<i class="devicon-html5-plain-wordmark colored"></i>
+		  		    			<i class="devicon-css3-plain-wordmark colored"></i>
+		  		    			<i class="devicon-postgresql-plain-wordmark colored"></i>
+		  	    			</div>
+		  	    		</div>
+		  	    		<div class="row text-center" style="margin:20px;">
+		  	    				<a class="btn btn-launch" href="https://github.com/Maelstrm/ImpactHub-App" target="blank">View on GitHub</a>
+		      			</div>
+		  				</div>
+		  		</div>
+		  		<div class="row repo-row">
+		  		    <div class="col-sm-8 col-sm-offset-2">
+		  		    	<div class="row vertical-align">
+			  		    		<div class="col-xs-12 col-md-8 col-md-push-4">
+			  		    			<img src="https://github.com/lvang5/Vagary/raw/master/public/landingpage.png" class="img-responsive work-item-img center-block">
+			  		    		</div>
+			  		    		<div class="col-xs-12 col-md-4 col-md-pull-8">
+			  		    			<h2><a href="https://github.com/lvang5/Vagary" target="blank">Vagary</a></h2>
+			  		    			<p>
+Vagary is an application that offers affordable rental pricing for vehicles to tourist/locals wherever they plan to visit. Anyone can access the site and view the different vehicles that are available to rent. In order for a user to be a renter or complete a rent, that user will have to create an account with the application to be able to checkout/add their vehicle.</p>
+			  		    		</div>
+		  		    		
+		  	    		</div>
+		  	    		<div class="row text-center techUsed">
+		  	    			<div class="col-xs-12">
+		  		    			<i class="devicon-react-plain-wordmark colored"></i>
+		  		    			<i class="devicon-javascript-plain-wordmark colored"></i>
+		  		    			<i class="devicon-html5-plain-wordmark colored"></i>
+		  		    			<i class="devicon-css3-plain-wordmark colored"></i>
+		  		    			<i class="devicon-visualstudio-plain-wordmark colored"></i>
+		  		    			<i class="devicon-trello-plain-wordmark colored"></i>
+		  		    			<i class="devicon-nodejs-plain-wordmark colored"></i>
+		  		    			<i class="devicon-express-plain-wordmark colored"></i>
+		  		    			<i class="devicon-postgresql-plain-wordmark colored"></i>
+		  	    			</div>
+		  	    		</div>
+		  	    		<div class="row text-center" style="margin:20px;">
+		  	    				<a class="btn btn-launch" href="https://github.com/lvang5/Vagary" target="blank">View on GitHub</a>
+		      			</div>
+		  				</div>
+		  		</div>
+		  		<div class="row repo-row">
+		  		    <div class="col-sm-8 col-sm-offset-2">
+		  		    	<div class="row vertical-align">
+				  		    	<div class="col-xs-12 text-center">
+				  		    		<h2><a href="https://github.com/lvang5/Survey-Says" target="blank">Survey-Says</a></h2>
+				  		    		<p>This is a survey application that asks you four questions. You can rate how you are feeling on a scale of 1-5 and once you complete the questions you can start over and leave more feedback.</p>
+				  		    	</div>
+		  		    		
+		  	    		</div>
+		  	    		<div class="row text-center techUsed">
+		  	    			<div class="col-xs-12">
+		  		    			<i class="devicon-react-plain-wordmark colored"></i>
+		  		    			<i class="devicon-javascript-plain-wordmark colored"></i>
+		  		    			<i class="devicon-trello-plain-wordmark colored"></i>
+		  		    			<i class="devicon-postgresql-plain-wordmark colored"></i>
+		  		    			<i class="devicon-express-plain-wordmark colored"></i>
+		  		    			<i class="devicon-nodejs-plain-wordmark colored"></i>
+		  		    			<i class="devicon-visualstudio-plain-wordmark colored"></i>
+		  		    			<i class="devicon-html5-plain-wordmark colored"></i>
+		  		    			<i class="devicon-css3-plain-wordmark colored"></i>
+		  	    			</div>
+		  	    		</div>
+		  	    		<div class="row text-center" style="margin:20px;">
+		  	    				<a class="btn btn-launch" href="https://github.com/lvang5/Survey-Says" target="blank">View on GitHub</a>
+		      			</div>
+		  				</div>
+		  		</div>
+		  		<div class="row repo-row">
+		  		    <div class="col-sm-8 col-sm-offset-2">
+		  		    	<div class="row vertical-align">
+			  		    		<div class="col-xs-12 col-md-8 col-md-push-4">
+			  		    			<img src="https://github.com/lvang5/Movie-Collection/raw/master/Screen%20Shot%202018-08-27%20at%2012.53.22%20PM.png" class="img-responsive work-item-img center-block">
+			  		    		</div>
+			  		    		<div class="col-xs-12 col-md-4 col-md-pull-8">
+			  		    			<h2><a href="https://github.com/lvang5/Movie-Collection" target="blank">Movie-Collection</a></h2>
+			  		    			<p>
+This application create two views that allows you to do a few things with your movie collection. The &quot;add movie&quot; view allows you to add a new movie to your collection. Once you have completed adding a movie it will automatically add this movie into your collection and appear on the screen. If you get rid of a movie there is a feature that will delete that movie. Each movie shows different properties of the movie such as the name, runtime, release date and an image if provided. In the manage genre view you can see your current projects and the total movies within each project. You are able to delete empty projects but not projects that contain at least 1 movie.</p>
+			  		    		</div>
+		  		    		
+		  	    		</div>
+		  	    		<div class="row text-center techUsed">
+		  	    			<div class="col-xs-12">
+		  		    			<i class="devicon-html5-plain-wordmark colored"></i>
+		  		    			<i class="devicon-css3-plain-wordmark colored"></i>
+		  		    			<i class="devicon-visualstudio-plain-wordmark colored"></i>
+		  		    			<i class="devicon-javascript-plain-wordmark colored"></i>
+		  		    			<i class="devicon-angularjs-plain-wordmark colored"></i>
+		  		    			<i class="devicon-postgresql-plain-wordmark colored"></i>
+		  		    			<i class="devicon-nodejs-plain-wordmark colored"></i>
+		  		    			<i class="devicon-express-plain-wordmark colored"></i>
+		  	    			</div>
+		  	    		</div>
+		  	    		<div class="row text-center" style="margin:20px;">
+		  	    				<a class="btn btn-launch" href="https://github.com/lvang5/Movie-Collection" target="blank">View on GitHub</a>
+		      			</div>
+		  				</div>
+		  		</div>
+		  		<div class="row repo-row">
+		  		    <div class="col-sm-8 col-sm-offset-2">
+		  		    	<div class="row vertical-align">
+				  		    	<div class="col-xs-12 text-center">
+				  		    		<h2><a href="https://github.com/lvang5/Gallery" target="blank">Gallery</a></h2>
+				  		    		<p></p>
+				  		    	</div>
+		  		    		
+		  	    		</div>
+		  	    		<div class="row text-center techUsed">
+		  	    			<div class="col-xs-12">
+		  		    			<i class="devicon-angularjs-plain-wordmark colored"></i>
+		  		    			<i class="devicon-html5-plain-wordmark colored"></i>
+		  		    			<i class="devicon-css3-plain-wordmark colored"></i>
+		  		    			<i class="devicon-javascript-plain-wordmark colored"></i>
+		  		    			<i class="devicon-visualstudio-plain-wordmark colored"></i>
+		  	    			</div>
+		  	    		</div>
+		  	    		<div class="row text-center" style="margin:20px;">
+		  	    				<a class="btn btn-launch" href="https://github.com/lvang5/Gallery" target="blank">View on GitHub</a>
+		      			</div>
+		  				</div>
+		  		</div>
+
+
+
+			</section>			
+
+			<div class="row row-footer text-center">
+				<div class="col">
+  				<div style="margin:50px;">
+  					<h3 style="margin:50px 0 15px">I'm available for work, get in touch</h3>
+				  	<a href="mailto:vang.lais@gmail.com" class="" target="_blank">
+				  		vang.lais@gmail.com
+				  	</a>
+
+				  </div>
+				</div>
+			</div>
+
+
+
+
+		</div>
+
+
+		<!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+		<script
+	  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+	  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+	  crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<!-- <script src="js/myScripts.js"></script> -->
+
+	</body>
 </html>
-
-
